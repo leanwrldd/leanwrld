@@ -8,7 +8,6 @@ public class karakterHaraketi2 : MonoBehaviour
     public float karakterHizi;
     public float ziplamaGucu = 5f;
     public Rigidbody2D rb;
-    bool ziplamaKontrol2 = false;
     bool oyunBitti = false;
 
     void Update()
