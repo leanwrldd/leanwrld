@@ -10,7 +10,7 @@ public class karakterHaraketi : MonoBehaviour
     public Rigidbody2D rb;
     bool ziplamaKontrol = false;
     bool oyunBitti = false;
-
+    
     void Update()
     {
         if (!oyunBitti)
@@ -28,7 +28,7 @@ public class karakterHaraketi : MonoBehaviour
     {
         float yatayHareket = Input.GetAxis("Horizontal") * karakterHizi * Time.deltaTime;
 
-        // Sadece yön tuþlarýna izin vermek için kontrol ekle
+        // Sadece yï¿½n tuï¿½larï¿½na izin vermek iï¿½in kontrol ekle
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))
         {
             transform.Translate(yatayHareket, 0, 0);

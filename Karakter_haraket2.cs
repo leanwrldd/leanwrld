@@ -20,6 +20,7 @@ public class karakterHaraketi2 : MonoBehaviour
         }
     }
 
+    
     void karakterHareketi2()
     {
         float yatayHareket = 0f;
