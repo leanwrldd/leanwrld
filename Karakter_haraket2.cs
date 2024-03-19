@@ -9,6 +9,7 @@ public class karakterHaraketi2 : MonoBehaviour
     public float ziplamaGucu = 5f;
     public Rigidbody2D rb;
     bool oyunBitti = false;
+    bool ziplamaKontrol2;
 
     void Update()
     {
@@ -23,7 +24,7 @@ public class karakterHaraketi2 : MonoBehaviour
     {
         float yatayHareket = 0f;
 
-        // Sadece WASD tuþlarýna izin vermek için kontrol ekle
+        // Sadece WASD tuï¿½larï¿½na izin vermek iï¿½in kontrol ekle
         if (Input.GetKey(KeyCode.D))
         {
             yatayHareket = karakterHizi * Time.deltaTime;
@@ -33,7 +34,7 @@ public class karakterHaraketi2 : MonoBehaviour
             yatayHareket = -karakterHizi * Time.deltaTime;
         }
 
-        // Sadece W tuþuna basýldýðýnda zýplama
+        // Sadece W tuï¿½una basï¿½ldï¿½ï¿½ï¿½nda zï¿½plama
         if (Input.GetKeyDown(KeyCode.W))
         {
             Zipla2();
